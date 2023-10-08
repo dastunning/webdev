@@ -3,12 +3,11 @@ import LoginForm from './components/LoginForm';
 import withExtraFeaturesHOC from './components/withExtraFeaturesHOC';
 
 function LoginPage({ onLoginSuccess }) {
-    const [user, setUser] = useState(null);
-
     const handleLogin = credentials => {
         if (credentials.username === 'das' && credentials.password === '123') {
-            setUser(credentials);
-            onLoginSuccess(); // Notify App of successful login.
+            onLoginSuccess('user');  // Notify App of successful login as user
+        } else if (credentials.username === 'operator' && credentials.password === '123') {
+            onLoginSuccess('operator');  // Notify App of successful login as operator
         } else {
             alert('Invalid Credentials');
         }
