@@ -1,0 +1,54 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ADD8E6;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="number"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #7CFC00;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #66cc00;
+}
+
+/* Login Page Styles */
+.login-container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Main Payment Page Styles */
+.payment-container {
+    text-align: center;
+    padding: 50px;
+}
