@@ -102,3 +102,66 @@ button:hover {
 .promocode-details p {
     margin-bottom: 10px;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 28px;
+    color: #2196F3;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+
+    /* Placeholder color */
+    ::placeholder {
+        color: #BDBDBD;
+    }
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #90CAF9;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+/* Illustrated Image (assuming you use an img tag with class .illustration) */
+.illustration {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    max-width: 40%;
+    z-index: -1; /* To keep it behind the login box */
+}

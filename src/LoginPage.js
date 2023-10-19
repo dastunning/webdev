@@ -8,6 +8,8 @@ function LoginPage({ onLoginSuccess }) {
             onLoginSuccess('user');  // Notify App of successful login as user
         } else if (credentials.username === 'operator' && credentials.password === '123') {
             onLoginSuccess('operator');  // Notify App of successful login as operator
+        } else if (credentials.username === 'admin' && credentials.password === '123') {
+            onLoginSuccess('admin');  // Notify App of successful login as operator
         } else {
             alert('Invalid Credentials');
         }

@@ -1,0 +1,69 @@
+/* General Styles for Promo Code Components */
+.promo-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.promo-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* PromoCodeCard Styles */
+.promo-card {
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+
+.promo-card span {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* PromoCodeFilter Styles */
+.promo-filter {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.promo-filter input, .promo-filter select {
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* PromoCodeList Styles */
+.promo-list {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 10px;
+    width: 60%;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.promo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.promo-item:last-child {
+    border-bottom: none;
+}
